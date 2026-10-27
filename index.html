@@ -92,7 +92,7 @@
   .card{background:var(--panel);border-radius:28px;}
   .dept-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
   .dept{padding:40px;display:flex;flex-direction:column;gap:28px;min-width:0;}
-  .dept-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .dept-head{display:flex;flex-direction:column;align-items:flex-start;gap:6px;}
   .dept-head h3{font-size:28px;letter-spacing:-0.01em;}
   .dept-phone{display:block;margin-top:4px;font-size:15px;color:var(--text-2);font-variant-numeric:tabular-nums;}
   .dept-btn{color:var(--link);font-size:15px;padding:10px 0;}
@@ -153,6 +153,23 @@
     .btn-ghost:hover,.dept-btn:hover,.social-pill:hover,.map-link:hover,.info-row a:hover{text-decoration:underline;}
   }
 
+
+  .btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-size:17px;font-weight:600;padding:13px 26px;border-radius:980px;}
+  .wa-note{font-size:13px;color:var(--text-2);margin-top:10px;}
+  .wa-or{font-size:13px;color:var(--text-2);margin:26px 0 12px;}
+
+  /* barra maior (aprovada pelo Marketing, out/2026) */
+  .nav{height:80px;}
+  .nav-brand{gap:14px;font-size:22px;letter-spacing:-0.02em;}
+  .nav-brand img{width:52px;height:52px;border-radius:13px;padding:4px;}
+  .nav-links a{font-size:14px;}
+  .nav-cta{font-size:14px;padding:8px 18px;}
+  section[id]{scroll-margin-top:80px;}
+  @media(max-width:833px){.nav{height:64px;}.nav-brand img{width:42px;height:42px;}.nav-brand{font-size:19px;}}
+
+  .ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;justify-items:center;align-items:start;}
+  .ig-grid .instagram-media{max-width:420px !important;min-width:300px !important;width:100% !important;margin:0 !important;}
+  .ig-more{text-align:center;margin-top:36px;}
 </style>
 </head>
 <body>
@@ -198,7 +215,7 @@
       </span></span><br>da sua empresa.</h1>
       <p class="lede">Do MEI ao Lucro Real: abertura, gestão fiscal, folha de pagamento e planejamento tributário com atendimento direto por setor.</p>
       <div class="hero-actions">
-        <a href="#contato" class="btn-primary">Falar com um contador&nbsp;→</a>
+        <a href="#contato" class="btn-primary">Fale com a gente&nbsp;→</a>
         <a href="#servicos" class="btn-ghost">Ver serviços</a>
       </div>
       <ul class="hero-facts">
@@ -296,13 +313,34 @@
   </div>
 </section>
 
+<section id="instagram">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Acompanhe a gente no Instagram</h2>
+      <p>Dicas, novidades e bastidores da Sucessocont.</p>
+    </div>
+    <div class="ig-grid">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DeuCSD7CmuI/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DeuCSD7CmuI/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DefUnnQCQYR/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DefUnnQCQYR/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DeMiIZAjcTK/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DeMiIZAjcTK/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Dd388jhlEK9/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/Dd388jhlEK9/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdmrXBujT4N/" data-instgrm-version="14"><a href="https://www.instagram.com/p/DdmrXBujT4N/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DbJEJCrErDQ/" data-instgrm-version="14"><a href="https://www.instagram.com/p/DbJEJCrErDQ/" target="_blank" rel="noopener">Ver no Instagram</a></blockquote>
+    </div>
+    <p class="ig-more"><a href="https://www.instagram.com/sucessocont/" target="_blank" rel="noopener" class="btn-ghost">Ver mais em @sucessocont</a></p>
+  </div>
+</section>
+<script async src="https://www.instagram.com/embed.js"></script>
+
 <section id="contato">
   <div class="wrap">
     <div class="footer-card card">
       <div class="footer-grid">
         <div>
           <h2>Quero entrar em contato</h2>
-          <p class="lede">Preencha seus dados e nosso time entra em contato.</p>
+          <p class="lede">Prefere conversar? Chame direto no WhatsApp, ou deixe seus dados e nosso time entra em contato.</p>
+          <a href="https://wa.me/5547992915274" class="btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M4 3h16a1 1 0 011 1v12a1 1 0 01-1 1H8l-4.300 4a.5.5 0 01-.7-.4V4a1 1 0 011-1z"/></svg>Chamar no WhatsApp</a><p class="wa-note">Societário · (47) 99291-5274 · resposta mais rápida que o formulário</p>
+          <p class="wa-or">ou preencha o formulário</p>
           <form action="https://formspree.io/f/xnpakvdr" method="POST">
             <!-- Armadilha anti-spam (honeypot do Formspree): invisível pra pessoas; robôs que preenchem são descartados -->
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
